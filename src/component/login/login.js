@@ -35,11 +35,14 @@ class Login extends React.Component {
       <div>
         <form onSubmit={this.handleSubmit} >
           <div className="form-group">
-            <label for="nameInput">User Name</label>
+            <label htmlfor="nameInput">Sign In</label>
+           </div>
+          <div className="form-group">
+            <label htmlfor="nameInput">User Name</label>
             <input type="text" name="name" value={this.state.name} onChange={this.handleChange} className="form-control" id="nameInput" placeholder="Name" />
           </div>
           <div className="form-group">
-            <label for="password">Password</label>
+            <label htmlfor="password">Password</label>
             <input name="pwd" type="password" value={this.state.pwd} onChange={this.handleChange} className="form-control" id="pwdInput" />
           </div>
           <input type="submit" value="Submit" className="btn btn-primary" />
