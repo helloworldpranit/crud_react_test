@@ -9,7 +9,7 @@ class Comments extends React.Component {
 
         this.state = {
             message: '',
-            formDa: [],
+            formDa: [{ Title : "demo", Body : "demo"}],
             newbook: {
                 key: Date.now(),
                 Title: "",
